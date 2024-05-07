@@ -27,8 +27,10 @@ const HeroSection = () => {
           Documentation
         </a>
       </div>
-      <div className="flex mt-10 justify-center">
-        <video
+      <div className="flex md:flex-row flex-col mt-10 justify-center items-center w-full md:pl-56 pl-36">
+        {/* first div */}
+       <div className="w-1/2">
+       <video
           autoPlay
           loop
           muted
@@ -37,7 +39,10 @@ const HeroSection = () => {
           <source src={video1} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <video
+       </div>
+       {/* second div */}
+       <div className="w-1/2">
+       <video
           autoPlay
           loop
           muted
@@ -46,6 +51,7 @@ const HeroSection = () => {
           <source src={video2} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+       </div>
       </div>
     </div>
   );
